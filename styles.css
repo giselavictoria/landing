@@ -1,0 +1,374 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  /* Hero + header + nav */
+  
+  .wrapper {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .gradient {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    background: linear-gradient(
+      60deg,
+      rgba(5, 130, 251, 1) 0%,
+      rgba(87, 237, 252, 1) 37%,
+      rgba(252, 160, 80, 1) 70%,
+      rgba(253, 39, 248, 1) 100%
+    );
+    clip-path: polygon(0 0, 100% 0, 100% 34%, 0 55%);
+    z-index: -1;
+  }
+  
+  .flexRow {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .flexColumn {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header.flexRow {
+    align-items: baseline;
+    justify-content: space-around;
+    padding-top: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  h1.logo {
+    width: 15%;
+    color: #ffffff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: right;
+  }
+  
+  nav {
+    width: 60%;
+    justify-content: flex-start;
+  }
+  
+  ul.flexRow {
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+  }
+  
+  ul li a:hover {
+    color: #000000;
+  }
+  
+  .buttonNav {
+    width: 25%;
+    justify-content: flex-start;
+  }
+  
+  div.buttonNav button {
+    width: 5rem;
+    height: 1.5rem;
+    background: rgba(255, 255, 255, 0.42);
+    border-radius: 3.75rem;
+    border: none;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  div.buttonNav button:hover {
+    background: rgba(255, 255, 255, 1);
+    color: #000000;
+  }
+  
+  /* Hero + title + img + button */
+  div.heroContent {
+    width: 100%;
+    padding-top: 5rem;
+  }
+  
+  div.heroTitle {
+    width: 50%;
+    padding: 0 7.5rem 0 7.5rem;
+  }
+  
+  div.heroTitle h2 {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    line-height: 4rem;
+    color: #2e2e2e;
+  }
+  
+  div.heroTitle p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #2e2e2e;
+  }
+  
+  div.heroTitle span {
+    font-weight: 900;
+    color: #2e2e2e;
+  }
+  
+  div.heroImage {
+    align-items: baseline;
+    justify-content: center;
+    width: 50%;
+  }
+  
+  div.buttonHero {
+    justify-content: flex-start;
+  }
+  
+  div.buttonHero button.buttonHeroOne {
+    width: 7rem;
+    height: 2rem;
+    background: rgba(14, 14, 14, 0.78);
+    border-radius: 3.75rem;
+    border: none;
+    color: #ffffff;
+    margin-right: 2rem;
+  }
+  
+  div.buttonHero button.buttonHeroOne:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  
+  div.buttonHero button.buttonHeroTwo {
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    width: 9rem;
+    height: 2rem;
+    background: #ffffff;
+    border-radius: 3.75rem;
+    border: none;
+    color: rgba(14, 14, 14, 0.78);
+    font-weight: 700;
+  }
+  
+  /*div.buttonHero i.buttonHeroIcon {
+    color: rgba(14, 14, 14, 0.78);
+    font-weight: 900;
+    padding-left: 0.5rem;
+  }*/
+  
+  div.buttonHero button.buttonHeroTwo:hover {
+    color: #000000;
+  }
+  
+  /* Logos */
+  
+  div.logos {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    padding: 0 7.5rem 0 7.5rem;
+  }
+  
+  div.logos.marginTop {
+    margin-top: 1rem;
+  }
+  
+  div.logos img.instacart {
+    width: 7rem;
+    height: 5rem;
+  }
+  
+  div.logos img.salesforce {
+    width: 6rem;
+    height: 4rem;
+  }
+  
+  div.logos img.amazon {
+    width: 5rem;
+    height: 5rem;
+  }
+  
+  div.logos img.slack {
+    width: 7rem;
+    height: 2rem;
+  }
+  
+  div.logos img.shopify {
+    width: 7rem;
+    height: 7rem;
+  }
+  
+  div.logos img.google {
+    width: 6.5rem;
+    height: 5rem;
+  }
+  
+  div.logos img.lyft {
+    width: 3rem;
+    height: 2rem;
+  }
+  
+  div.logos img.zoom {
+    width: 6rem;
+    height: 1.5rem;
+  }
+  
+  /* Section One */
+  .blue {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #274b70;
+    clip-path: polygon(0 24%, 100% 6%, 100% 65%, 0 84%);
+    z-index: -1;
+  }
+  
+  section.flexRow {
+    width: 100%;
+    padding-top: 14rem;
+  }
+  
+  div.sectionOneTitle {
+    width: 50%;
+    padding: 0 7.5rem 0 7.5rem;
+  }
+  
+  div.sectionOneTitle h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    line-height: 2rem;
+    color: #ffffff;
+  }
+  
+  div.sectionOneTitle p {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+  }
+  
+  div.sectionOneImage {
+    align-items: baseline;
+    justify-content: center;
+    width: 50%;
+  }
+  
+  div.sectionOneTitle button {
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    width: 9rem;
+    height: 2rem;
+    background: rgba(18, 212, 255, 0.78);
+    border-radius: 3.75rem;
+    border: none;
+    color: #ffffff;
+    font-weight: 900;
+  }
+  
+  div.sectionOneTitle button:hover {
+    background-color: #000000;
+  }
+  
+  /* Section Two */
+  
+  div.sectionTwoTitle {
+    width: 100%;
+    margin-top: 5rem;
+    padding: 0 7.5rem 0 7.5rem;
+  }
+  
+  div.sectionTwoTitle h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    line-height: 2rem;
+    color: #2e2e2e;
+    padding-right: 30rem;
+  }
+  
+  div.sectionTwoIcons {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 4rem;
+    padding: 0 7.5rem 0 7.5rem;
+  }
+  
+  div.sectionTwoIcon {
+    width: 25%;
+    margin-right: 3rem;
+  }
+  
+  div.sectionTwoIcon h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2e2e2e;
+  }
+  
+  div.sectionTwoIcon p {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #2e2e2e;
+  }
+  
+  div.sectionTwoIcon span {
+    font-weight: 900;
+    color: #2fdf84;
+  }
+  
+  /* Footer */
+  div.footerLogo {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+  }
+  
+  div.footerLogo h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #656565;
+    margin: 0px;
+  }
+  
+  div.footerLogo hr {
+    width: 15rem;
+    border: 1rem solid #2fdf84;
+    margin: 0px;
+  }
+  
+  div.footerLogo p {
+    font-size: 0.5rem;
+    font-weight: 400;
+    color: #656565;
+    margin-top: 0.3rem;
+  }
+  
